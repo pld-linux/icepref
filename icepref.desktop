@@ -4,7 +4,7 @@ Name[pl]=IcePrefs
 Comment=Preferences editor for icewm
 Comment[pl]=Edytor preferencji dla icewm'a
 Icon=
-Exec=iceprefs
+Exec=icepref
 Terminal=0
 Type=Application
 
