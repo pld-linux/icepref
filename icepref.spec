@@ -14,7 +14,7 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Patch0:		icepref-python_path.patch
+Patch0:		%{name}-python_path.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	pygtk python gtk+ icewm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
