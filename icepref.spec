@@ -13,6 +13,7 @@ Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	pygtk python gtk+ icewm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,8 +42,9 @@ konfiguracyjnym.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_prefix}/bin,%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_prefix}/bin,%{_mandir}/man1,%{_applnkdir}/Settings/IceWM}
 %{__make} PREFIX=$RPM_BUILD_ROOT%{_prefix} install
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/IceWM/%{name}.desktop
 
 gzip -9nf BUGS FAQ README TODO
 
@@ -53,4 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/icepref
+%{_applnkdir}/Settings/IceWM/*
 %{_mandir}/man1/icepref.1*
