@@ -15,6 +15,9 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Source2:	%{name}_16x16.xpm
+Source3:	%{name}_32x32.xpm
+Source4:	%{name}_48x48.xpm
 Patch0:		%{name}-python_path.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	gtk+
@@ -52,11 +55,15 @@ Herramienta de configuración para icewm
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_applnkdir}/Settings/IceWM}
+install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %{__make} install \
 	PREFIX=$RPM_BUILD_ROOT%{_prefix}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/IceWM/%{name}.desktop
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_16x16.xpm
+install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
+install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_48x48.xpm
 
 gzip -9nf BUGS FAQ README TODO
 
@@ -68,4 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/icepref
 %{_applnkdir}/Settings/IceWM/*
+%{_pixmapsdir}/*.xpm
 %{_mandir}/man1/icepref.1*
