@@ -9,6 +9,7 @@ Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
+# Source0-md5:	25d1af96450d34b82d4026b1b18ca61b
 Source1:	%{name}.desktop
 Source2:	%{name}_16x16.xpm
 Source3:	%{name}_32x32.xpm
