@@ -1,8 +1,8 @@
 #
 Summary:	Graphical utility to configure IceWM
-Summary(pl):	Graficzne narzêdzie do konfiguracji IceWM'a
-Summary(pt_BR):	Uma ferramenta de configuração para o icewm
-Summary(es):	Herramienta de configuración para icewm
+Summary(pl):	Graficzne narzêdzie do konfiguracji IceWM-a
+Summary(pt_BR):	Uma ferramenta de configuração para o IceWM
+Summary(es):	Herramienta de configuración para IceWM
 Name:		icepref
 Version:	1.1
 Release:	4
@@ -33,16 +33,16 @@ control over both the behavior and apperance). This version best
 matches the options found in IceWM version 1.0.0.
 
 %description -l pl
-IcePref jest graficznym narzêdziem do konfiguracji IceWM'a. Pozwala
+IcePref jest graficznym narzêdziem do konfiguracji IceWM-a. Pozwala
 u¿ytkownikowi na ³atwe konfigurowanie wszystkich opcji w pliku
 konfiguracyjnym.
 
 %description -l pt_BR
-O IcePref é uma ferramenta de configuração para o icewm, baseada em
+O IcePref é uma ferramenta de configuração para o IceWM, baseada em
 GTK+.
 
 %description -l es
-Herramienta de configuración para icewm
+Herramienta de configuración para IceWM.
 
 %prep
 %setup -q -n %{name}
