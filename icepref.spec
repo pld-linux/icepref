@@ -8,8 +8,6 @@ Version:	1.1
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}_16x16.xpm
