@@ -4,9 +4,11 @@
 #
 Summary:	Graphical utility to configure IceWM
 Summary(pl):	Graficzne narzêdzie do konfiguracji IceWM'a
+Summary(pt_BR): Uma ferramenta de configuração para o icewm
+Summary(es):	Herramienta de configuración para icewm
 Name:		icepref
 Version:	1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
@@ -35,6 +37,13 @@ matches the options found in IceWM version 1.0.0.
 IcePref jest graficznym narzêdziem do konfiguracji IceWM'a. Pozwala
 u¿ytkownikowi na ³atwe konfigurowanie wszystkich opcji w pliku
 konfiguracyjnym.
+
+%description -l pt_BR
+O IcePref é uma ferramenta de configuração para o icewm, baseada
+em GTK+.
+
+%description -l es
+Herramienta de configuración para icewm
 
 %prep
 %setup -q -n %{name}
