@@ -5,7 +5,7 @@ Summary(pt_BR):	Uma ferramenta de configuração para o icewm
 Summary(es):	Herramienta de configuración para icewm
 Name:		icepref
 Version:	1.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
@@ -18,6 +18,7 @@ URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	gtk+
 Requires:	icewm
 Requires:	pygtk
+Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
