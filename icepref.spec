@@ -6,8 +6,7 @@ Summary:	Graphical utility to configure IceWM
 Summary(pl):	Graficzne narzêdzie do konfiguracji IceWM'a
 Name:		icepref
 Version:	1.1
-BuildArch:	noarch
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
@@ -17,6 +16,7 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-python_path.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	pygtk python gtk+ icewm
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
