@@ -1,0 +1,8 @@
+--- icepref/icepref~	Thu Jan  6 00:16:04 2000
++++ icepref/icepref	Sat May  5 20:36:40 2001
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ ##############################################################################
+ #                                IcePref 1.0
