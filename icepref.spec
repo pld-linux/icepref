@@ -15,7 +15,9 @@ Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-python_path.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
-Requires:	pygtk python gtk+ icewm
+Requires:	gtk+
+Requires:	icewm
+Requires:	python-pygtk
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
