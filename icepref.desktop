@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=IceWM Settings
-Name[pl]=Ustawienia IcewM
+Name[pl]=Ustawienia IceWM
 Comment=Preferences editor for icewm
-Comment[pl]=Edytor preferencji dla icewm'a
+Comment[pl]=Edytor preferencji dla icewm
 Icon=icepref_48x48.xpm
 Exec=icepref
 Terminal=0
