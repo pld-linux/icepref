@@ -61,14 +61,12 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_16x16.xpm
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
 install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_48x48.xpm
 
-gzip -9nf BUGS FAQ README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc BUGS FAQ README TODO
 %attr(755,root,root) %{_bindir}/icepref
 %{_applnkdir}/Settings/IceWM/*
 %{_pixmapsdir}/*.xpm
