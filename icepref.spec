@@ -17,7 +17,7 @@ Patch0:		%{name}-python_path.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	gtk+
 Requires:	icewm
-Requires:	python-pygtk
+Requires:	pygtk
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
