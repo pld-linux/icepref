@@ -1,7 +1,4 @@
 #
-# TODO:
-# - icon
-#
 Summary:	Graphical utility to configure IceWM
 Summary(pl):	Graficzne narzêdzie do konfiguracji IceWM'a
 Summary(pt_BR): Uma ferramenta de configuração para o icewm
