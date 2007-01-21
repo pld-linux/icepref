@@ -5,7 +5,7 @@ Summary(pt_BR):	Uma ferramenta de configuração para o IceWM
 Summary(es):	Herramienta de configuración para IceWM
 Name:		icepref
 Version:	1.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://members.xoom.com/SaintChoj/%{name}-%{version}.tar.gz
@@ -15,6 +15,7 @@ Source2:	%{name}_16x16.xpm
 Source3:	%{name}_32x32.xpm
 Source4:	%{name}_48x48.xpm
 Patch0:		%{name}-python_path.patch
+Patch1:		%{name}-mandir.patch
 URL:		http://members.xoom.com/SaintChoj/icepref.html
 Requires:	gtk+
 Requires:	icewm
@@ -46,16 +47,16 @@ Herramienta de configuración para IceWM.
 %prep
 %setup -q -n %{name}
 %patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_applnkdir}/Settings/IceWM}
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	PREFIX=$RPM_BUILD_ROOT%{_prefix}
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Settings/IceWM/%{name}.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_16x16.xpm
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
 install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}_48x48.xpm
@@ -67,6 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS FAQ README TODO
 %attr(755,root,root) %{_bindir}/icepref
-%{_applnkdir}/Settings/IceWM/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*.xpm
 %{_mandir}/man1/icepref.1*
