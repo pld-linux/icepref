@@ -1,8 +1,8 @@
 #
 Summary:	Graphical utility to configure IceWM
-Summary(pl.UTF-8):   Graficzne narzędzie do konfiguracji IceWM-a
-Summary(pt_BR.UTF-8):   Uma ferramenta de configuração para o IceWM
-Summary(es.UTF-8):   Herramienta de configuración para IceWM
+Summary(pl.UTF-8):	Graficzne narzędzie do konfiguracji IceWM-a
+Summary(pt_BR.UTF-8):	Uma ferramenta de configuração para o IceWM
+Summary(es.UTF-8):	Herramienta de configuración para IceWM
 Name:		icepref
 Version:	1.1
 Release:	5
