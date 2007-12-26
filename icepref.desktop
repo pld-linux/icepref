@@ -1,12 +1,10 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=IceWM Settings
 Name[pl]=Ustawienia IceWM
 Comment=Preferences editor for icewm
 Comment[pl]=Edytor preferencji dla icewm
-Icon=icepref_48x48.xpm
+Icon=icepref_48x48
 Exec=icepref
 Terminal=false
 Type=Application
-
 # vi: encoding=utf-8
